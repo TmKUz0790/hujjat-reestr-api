@@ -4,6 +4,15 @@ Test topshirig'ining backend qismi (5- va 6-bo'limlar). Ariza beruvchi hujjat ha
 
 **Stek:** Python 3.13, Django 6, Django REST Framework, drf-spectacular (OpenAPI), requests. Baza: PostgreSQL yoki SQLite.
 
+## Jonli versiya
+
+Railway'da joylashtirilgan (API + PostgreSQL, yuklangan fayllar uchun doimiy volume):
+
+- Swagger: https://api-production-197b.up.railway.app/api/docs
+- API: https://api-production-197b.up.railway.app/api/arizalar (`X-Rol` sarlavhasi bilan)
+
+Eslatma: ArcGIS test qatlami umumiy, shuning uchun tasdiqlangan obyektlar u yerdan vaqti-vaqti bilan tozalanishi mumkin.
+
 ## Ishga tushirish
 
 ### 1-variant: lokal, SQLite (taxminan 3 daqiqa)
@@ -125,7 +134,7 @@ arizalar/
 - **JWT orqali rollar qilinmagan.** Topshiriqdagi soddalashtirilgan `X-Rol` sarlavhasi ishlatilgan.
 - **SOATO ro'yxati namuna.** Topshiriqda beriladigan JSON fayl qo'limda yo'q edi. `arizalar/data/soato.json` da 12 ta viloyat markazi bor (Andijon `1703401` topshiriqdan olingan, qolganlari namuna sifatida). Haqiqiy ro'yxatni ulash uchun faylni almashtiring yoki `SOATO_FILE` muhit o'zgaruvchisini bering.
 - **Muddat hisobida bayramlar e'tiborga olinmaydi.** Faqat shanba va yakshanba o'tkazib yuboriladi.
-- **Docker Compose fayli yozilgan, lekin shu muhitda ishga tushirib sinalmagan** (Docker daemon ishlamayotgan edi).
+- **Docker Compose lokalda sinalmagan** (Docker daemon ishlamayotgan edi). Xuddi shu `Dockerfile` Railway'da ishlaydi va tekshirilgan.
 - **Kamdan-kam uchraydigan holat.** Bir xil ID bilan ikkita parallel tasdiqlash bo'lsa, ArcGIS'ga obyekt yozilgandan keyin unique cheklov ishga tushishi mumkin. Bunda qatlamda bog'lanmagan obyekt qoladi. Buning oldini olish uchun ID oldindan bazada band qilinishi kerak bo'ladi.
 - **Esri test serveri umumiy.** Unga boshqalar ham yozadi va u vaqti-vaqti bilan tozalanadi. Tasdiqlangan hujjatning obyekti keyinchalik qatlamda topilmasligi mumkin.
 
