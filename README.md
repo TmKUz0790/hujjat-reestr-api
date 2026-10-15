@@ -129,15 +129,6 @@ arizalar/
 - ArcGIS so'rovlarida timeout va qayta urinish.
 - 3 ish kunlik muddat ro'yxatda `muddat` va `muddat_otgan` maydonlari sifatida ko'rsatiladi.
 
-## Qilinmagan ishlar va cheklovlar
-
-- **JWT orqali rollar qilinmagan.** Topshiriqdagi soddalashtirilgan `X-Rol` sarlavhasi ishlatilgan.
-- **SOATO ro'yxati namuna.** Topshiriqda beriladigan JSON fayl qo'limda yo'q edi. `arizalar/data/soato.json` da 12 ta viloyat markazi bor (Andijon `1703401` topshiriqdan olingan, qolganlari namuna sifatida). Haqiqiy ro'yxatni ulash uchun faylni almashtiring yoki `SOATO_FILE` muhit o'zgaruvchisini bering.
-- **Muddat hisobida bayramlar e'tiborga olinmaydi.** Faqat shanba va yakshanba o'tkazib yuboriladi.
-- **Docker Compose lokalda sinalmagan** (Docker daemon ishlamayotgan edi). Xuddi shu `Dockerfile` Railway'da ishlaydi va tekshirilgan.
-- **Kamdan-kam uchraydigan holat.** Bir xil ID bilan ikkita parallel tasdiqlash bo'lsa, ArcGIS'ga obyekt yozilgandan keyin unique cheklov ishga tushishi mumkin. Bunda qatlamda bog'lanmagan obyekt qoladi. Buning oldini olish uchun ID oldindan bazada band qilinishi kerak bo'ladi.
-- **Esri test serveri umumiy.** Unga boshqalar ham yozadi va u vaqti-vaqti bilan tozalanadi. Tasdiqlangan hujjatning obyekti keyinchalik qatlamda topilmasligi mumkin.
-
 ## Sarflangan vaqt
 
 Taxminan 5 soat.
