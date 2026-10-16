@@ -8,8 +8,8 @@ Test topshirig'ining backend qismi (5- va 6-bo'limlar). Ariza beruvchi hujjat ha
 
 Railway'da joylashtirilgan (API + PostgreSQL, yuklangan fayllar uchun doimiy volume):
 
-- Swagger: https://api-production-197b.up.railway.app/api/docs
-- API: https://api-production-197b.up.railway.app/api/arizalar (`X-Rol` sarlavhasi bilan)
+- Swagger: https://api-production-7923.up.railway.app/api/docs
+- API: https://api-production-7923.up.railway.app/api/arizalar (`X-Rol` sarlavhasi bilan)
 
 Eslatma: ArcGIS test qatlami umumiy, shuning uchun tasdiqlangan obyektlar u yerdan vaqti-vaqti bilan tozalanishi mumkin.
 
